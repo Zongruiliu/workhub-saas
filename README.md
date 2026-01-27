@@ -7,3 +7,10 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - PostgreSQL with Docker Compose
 - Flyway database migration
 - Health check endpoint (/ping)
+
+## Day 2
+- User entity & repository
+- User registration API
+- Request validation
+- BCrypt password encryption
+- Security permitAll for auth endpoints
