@@ -20,3 +20,9 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
+
+app:
+  jwt:
+    secret: "CHANGE_ME_TO_A_LONG_RANDOM_SECRET_AT_LEAST_32_CHARS"
+    issuer: "http://localhost:8080"
+    access-token-minutes: 60
