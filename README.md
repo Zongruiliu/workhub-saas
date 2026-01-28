@@ -14,3 +14,11 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Request validation
 - BCrypt password encryption
 - Security permitAll for auth endpoints
+
+## Day 3
+- User login with AuthenticationManager
+- JWT issuance using NimbusJwtEncoder (HS256)
+- Spring Security Resource Server (JWT)
+- Secured /me endpoint
+- Explicit authentication error mapping
+
