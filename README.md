@@ -22,3 +22,10 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Secured /me endpoint
 - Explicit authentication error mapping
 
+## Day 4
+- Workspace and membership data model
+- Flyway V2 migration (workspaces, workspace_members)
+- Create workspace API with transactional member creation
+- Owner role assigned automatically on creation
+- List workspaces by authenticated user
+
