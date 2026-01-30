@@ -29,3 +29,11 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Owner role assigned automatically on creation
 - List workspaces by authenticated user
 
+## Day 5
+- Workspace context via X-Workspace-Id header
+- ThreadLocal-based WorkspaceContext
+- Request interceptor for workspace injection
+- Workspace membership validation
+- Tenant-level access isolation (403 on invalid workspace)
+
+
