@@ -1,6 +1,7 @@
 package com.workhub.api.workspace;
 
 import com.workhub.app.WorkspaceService;
+import com.workhub.context.WorkspaceContext;
 import com.workhub.entity.Workspace;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;

@@ -14,4 +14,7 @@ public interface WorkspaceMemberRepository extends JpaRepository<WorkspaceMember
         where wm.userId = :userId
     """)
     List<Long> findWorkspaceIdsByUserId(Long userId);
+
+    boolean existsByWorkspaceIdAndUserId(Long workspaceId,Long userId);
+
 }
