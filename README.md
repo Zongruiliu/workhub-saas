@@ -36,4 +36,9 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Workspace membership validation
 - Tenant-level access isolation (403 on invalid workspace)
 
+## Day 6
+- RBAC data model (roles, permissions, role-permissions)
+- Built-in system roles (OWNER / ADMIN / MEMBER / VIEWER)
+- Permission codes for workspace, member, and project actions
+- Seeded role-permission mappings via Flyway migration
 
