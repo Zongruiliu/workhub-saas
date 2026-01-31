@@ -42,3 +42,10 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Permission codes for workspace, member, and project actions
 - Seeded role-permission mappings via Flyway migration
 
+## Day 7
+- PermissionService to resolve permissions by user and workspace
+- Role-to-permission resolution via RBAC tables
+- Database-based permission lookup (no cache yet)
+- Cache interface reserved for future optimization
+- Debug endpoint to retrieve current user permissions
+
