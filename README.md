@@ -49,3 +49,10 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Cache interface reserved for future optimization
 - Debug endpoint to retrieve current user permissions
 
+## Day 8
+- Custom permission annotation (@RequirePermission)
+- AOP-based permission enforcement
+- Workspace-aware authorization via WorkspaceContext
+- Integration with PermissionService for RBAC checks
+- Proper 403 responses for unauthorized access
+
