@@ -56,3 +56,12 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Integration with PermissionService for RBAC checks
 - Proper 403 responses for unauthorized access
 
+## Day 9
+- Project domain model with workspace_id
+- Flyway migration for projects table (V4__projects.sql)
+- Project CRUD APIs (POST /projects, GET /projects, GET /projects/{id})
+- @RequirePermission applied to all Project endpoints
+- Workspace isolation enforced via WorkspaceContext
+- Cross-workspace access prevention
+- Permission-based access control for project creation
+
