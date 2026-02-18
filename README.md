@@ -65,3 +65,11 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Cross-workspace access prevention
 - Permission-based access control for project creation
 
+## Day 10
+- Member role update API
+- OWNER / ADMIN only access
+- Last OWNER protection rule
+- Permission `workspace:member:update`
+- Flyway role-permission mapping
+- RBAC + business rule integration
+
