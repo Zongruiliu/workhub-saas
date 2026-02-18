@@ -1,5 +1,6 @@
 package com.workhub.entity;
 
+import com.workhub.domain.WorkspaceRole;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,7 +25,9 @@ public class WorkspaceMember {
     @Column(name = "user_id", nullable = false)
     private Long userId;
 
-    private String role;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private WorkspaceRole role;
 
     private Instant joinedAt = Instant.now();
 

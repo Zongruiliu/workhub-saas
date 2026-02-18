@@ -1,5 +1,6 @@
 package com.workhub.app;
 
+import com.workhub.domain.WorkspaceRole;
 import com.workhub.entity.Workspace;
 import com.workhub.entity.WorkspaceMember;
 import com.workhub.infra.WorkspaceMemberRepository;
@@ -31,7 +32,7 @@ public class WorkspaceService {
         WorkspaceMember owner = new WorkspaceMember();
         owner.setWorkspaceId(saved.getId());
         owner.setUserId(userId);
-        owner.setRole("OWNER");
+        owner.setRole(WorkspaceRole.OWNER);
 
         memberRepo.save(owner);
 
