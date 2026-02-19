@@ -73,3 +73,12 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - Flyway role-permission mapping
 - RBAC + business rule integration
 
+## Day 11
+
+- Add invite table (Flyway V5__invites.sql)
+- Generate invite token (UUID-based)
+- POST /workspaces/{id}/invites
+- Only OWNER / ADMIN can create invite
+- Store invite token in DB with workspace_id and role
+- Validate workspace context via X-Workspace-Id
+
