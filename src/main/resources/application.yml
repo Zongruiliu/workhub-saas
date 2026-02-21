@@ -20,6 +20,8 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
+    org.springframework.security: DEBUG
+    com.workhub: DEBUG
 
 app:
   jwt:

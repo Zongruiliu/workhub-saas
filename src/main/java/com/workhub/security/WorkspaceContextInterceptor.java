@@ -30,7 +30,8 @@ public class WorkspaceContextInterceptor implements HandlerInterceptor {
             return true;
         }
 
-        if(path.startsWith("/api/auth") || path.equals("/api/ping") || path.equals("/api/workspaces")) {
+        if(path.startsWith("/api/auth") || path.equals("/api/ping") || path.equals("/api/workspaces") || path.equals("/api/me")
+                || path.startsWith("/api/invites")) {
             return true;
         }
 

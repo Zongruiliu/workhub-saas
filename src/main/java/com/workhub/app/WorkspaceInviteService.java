@@ -3,6 +3,7 @@ package com.workhub.app;
 import com.workhub.domain.WorkspaceInvite;
 import com.workhub.infra.WorkspaceInviteRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -16,6 +17,7 @@ public class WorkspaceInviteService {
         this.repo = repo;
     }
 
+    @Transactional
     public String createInvite(Long workspaceId, Long creatorId, String role) {
         String token = UUID.randomUUID().toString();
         WorkspaceInvite invite = new WorkspaceInvite();
