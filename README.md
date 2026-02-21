@@ -74,11 +74,20 @@ Multi-tenant SaaS system built with Java & Spring Boot.
 - RBAC + business rule integration
 
 ## Day 11
-
 - Add invite table (Flyway V5__invites.sql)
 - Generate invite token (UUID-based)
 - POST /workspaces/{id}/invites
 - Only OWNER / ADMIN can create invite
 - Store invite token in DB with workspace_id and role
 - Validate workspace context via X-Workspace-Id
+
+## Day 12
+- Implement invite acceptance flow
+- POST /invites/accept
+- Validate invite token
+- Add user to workspace_members
+- Mark invite as used
+- Idempotent handling (repeat submit returns same result)
+- Authentication required (JWT)
+- Invite acceptance does not require X-Workspace-Id
 
